@@ -1,0 +1,62 @@
+baseURL = "https://jviccars.uk/"
+languageCode = "en-GB"
+title = "Jennifer Viccars"
+# Enable comments by entering your Disqus shortname
+disqusShortname = ""
+# Enable Google Analytics by entering your tracking code
+googleAnalytics = ""
+theme = "hugo-sustain"
+
+[permalinks]
+  post = "/:year/:month/:day/:slug"
+
+[params]
+  avatar = "img/profile.png"
+  author = "Jennifer Viccars"
+  description = ""
+  title = "Jennifer Viccars"
+  email = "hello@jviccars.uk"
+  email_full = "mailto:hello@jviccars.uk"
+  website = "jenniferviccars.me"
+
+
+
+  # Custom assets can be linked with their paths relative to static/
+  custom_css = []
+  custom_js  = []
+
+[params.social]
+  Email         = "hello@jviccars.uk"
+  LinkedIn      = "jenniferviccars"
+
+## Main Menu
+[[menu.main]]
+  name = "About"
+  weight = 100
+  identifier = "about"
+  url = "/about/"
+[[menu.main]]
+  name = "Job hunting"
+  weight = 200
+  identifier = "job-hunting"
+  url = "/job-hunting/"
+[[menu.main]]
+  name = "learning"
+  identifier = "learning"
+  weight = 300
+  url = "/learning/"
+[[menu.main]]
+  name = "feedback"
+  identifier = "feedback"
+  weight = 400
+  url = "/feedback/"
+[[menu.main]]
+  name = "cv"
+  identifier = "cv"
+  weight = 500
+  url = "/cv/"
+[[menu.main]]
+  name = "contact"
+  identifier = "contact"
+  weight = 600
+  url = "/"

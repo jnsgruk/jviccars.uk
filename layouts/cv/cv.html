@@ -1,0 +1,90 @@
+{{ define "main" }}
+<!-- Header -->
+{{ partial "header" . }}
+
+<div class="container">
+  <div class="row">
+    <header class="col-12 col-md-4">
+      <img src="{{ .Site.BaseURL }}img/profile.png" class="me" />
+      <h1>{{ .Site.Params.author }}</h1>
+      <p><a href="{{ .Site.Params.email_full }}">Email Me</a></p>
+    </header>
+    <div class="col-12 col-md-8">
+      {{ partial "employment" . }} {{ partial "education" . }} {{ partial "skills" . }} {{
+      partial "initiatives" . }} {{ partial "hobbies" . }}
+    </div>
+  </div>
+</div>
+</div>
+
+<style>
+  .me {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  margin-bottom: 20px;
+}
+
+section > h1 {
+  color: #521499;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+section > h1 {
+  font-size: 140%;
+  line-height: 120%;
+  text-transform: uppercase;
+}
+
+article {
+  margin-bottom: 20px;
+}
+
+article > header > h1 {
+  font-size: 112%;
+  font-weight: bold;
+  line-height: 150%;
+  margin-bottom: 0;
+  color: inherit;
+}
+
+article > header > span + span {
+  margin-left: 2px;
+}
+
+article > header > span + span::before {
+  content: "@";
+  margin-right: 4px;
+}
+
+article > header > span {
+  color: #808080;
+  font-size: 100%;
+}
+
+article > header > span a {
+  color: inherit;
+}
+
+article > header address {
+  display: inline;
+}
+
+article > header address + time {
+  margin-left: 6px;
+}
+
+article > header address + time::before {
+  content: "—";
+  margin-right: 6px;
+}
+
+</style>
+{{ end }}
+
+
